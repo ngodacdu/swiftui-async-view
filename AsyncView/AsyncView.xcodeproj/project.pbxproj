@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		10A5EF2A28CDFA72009819D3 /* AsyncViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A5EF2928CDFA72009819D3 /* AsyncViewApp.swift */; };
-		10A5EF2C28CDFA72009819D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A5EF2B28CDFA72009819D3 /* ContentView.swift */; };
+		10A5EF2C28CDFA72009819D3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A5EF2B28CDFA72009819D3 /* HomeView.swift */; };
 		10A5EF2E28CDFA75009819D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A5EF2D28CDFA75009819D3 /* Assets.xcassets */; };
 		10A5EF3128CDFA75009819D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A5EF3028CDFA75009819D3 /* Preview Assets.xcassets */; };
 		10A5EF3928CDFAA8009819D3 /* AsyncResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A5EF3828CDFAA8009819D3 /* AsyncResult.swift */; };
@@ -18,12 +18,13 @@
 		10CFFD9028CE2F7F0065EF78 /* AsyncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CFFD8F28CE2F7F0065EF78 /* AsyncView.swift */; };
 		10CFFD9328CE30D80065EF78 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CFFD9128CE30D80065EF78 /* Country.swift */; };
 		10CFFD9428CE30D80065EF78 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CFFD9228CE30D80065EF78 /* Endpoint.swift */; };
+		10D4F75528CF902900C5E054 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D4F75428CF902900C5E054 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10A5EF2628CDFA72009819D3 /* AsyncView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A5EF2928CDFA72009819D3 /* AsyncViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncViewApp.swift; sourceTree = "<group>"; };
-		10A5EF2B28CDFA72009819D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		10A5EF2B28CDFA72009819D3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		10A5EF2D28CDFA75009819D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10A5EF3028CDFA75009819D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		10A5EF3828CDFAA8009819D3 /* AsyncResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncResult.swift; sourceTree = "<group>"; };
@@ -33,6 +34,7 @@
 		10CFFD8F28CE2F7F0065EF78 /* AsyncView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncView.swift; sourceTree = "<group>"; };
 		10CFFD9128CE30D80065EF78 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		10CFFD9228CE30D80065EF78 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		10D4F75428CF902900C5E054 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				10A5EF2928CDFA72009819D3 /* AsyncViewApp.swift */,
-				10A5EF2B28CDFA72009819D3 /* ContentView.swift */,
+				10A5EF2B28CDFA72009819D3 /* HomeView.swift */,
+				10D4F75428CF902900C5E054 /* SettingView.swift */,
 				10CFFD9128CE30D80065EF78 /* Country.swift */,
 				10CFFD9228CE30D80065EF78 /* Endpoint.swift */,
 				10A5EF3728CDFA90009819D3 /* Async */,
@@ -167,10 +170,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				10A5EF3D28CE1DDD009819D3 /* AsyncModel.swift in Sources */,
+				10D4F75528CF902900C5E054 /* SettingView.swift in Sources */,
 				10CFFD9428CE30D80065EF78 /* Endpoint.swift in Sources */,
 				10A5EF3F28CE2141009819D3 /* AsyncModelView.swift in Sources */,
 				10A5EF3B28CE1BF4009819D3 /* AsyncResultView.swift in Sources */,
-				10A5EF2C28CDFA72009819D3 /* ContentView.swift in Sources */,
+				10A5EF2C28CDFA72009819D3 /* HomeView.swift in Sources */,
 				10CFFD9328CE30D80065EF78 /* Country.swift in Sources */,
 				10A5EF3928CDFAA8009819D3 /* AsyncResult.swift in Sources */,
 				10CFFD9028CE2F7F0065EF78 /* AsyncView.swift in Sources */,

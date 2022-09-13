@@ -30,7 +30,9 @@ struct AsyncResultView<AsyncData, Empty: View, Loading: View, Success: View, Fai
     var body: some View {
         switch result {
         case .empty:
-            empty()
+            ZStack {
+                empty()
+            }
         case .loading:
             loading()
         case let .success(data):

@@ -9,9 +9,21 @@ import SwiftUI
 
 @main
 struct AsyncViewApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                VStack(alignment: .center, spacing: 20) {
+                    NavigationLink(destination: HomeView()) {
+                        Text("Using AsyncView")
+                            .font(.headline)
+                    }
+                    NavigationLink(destination: SettingView()) {
+                        Text("Using AsyncModelView")
+                            .font(.headline)
+                    }
+                }
+            }
         }
     }
 }
