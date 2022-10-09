@@ -1,15 +1,14 @@
 //
-//  AsyncViewApp.swift
-//  AsyncView
+//  SAAsyncViewDemoApp.swift
+//  SAAsyncViewDemo
 //
-//  Created by Ngo Dac Du on 9/11/22.
+//  Created by Ngo Dac Du on 10/9/22.
 //
 
 import SwiftUI
 
 @main
-struct AsyncViewApp: App {
-    
+struct SAAsyncViewDemoApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {

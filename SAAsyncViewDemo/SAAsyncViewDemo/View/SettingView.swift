@@ -1,16 +1,17 @@
 //
-//  ContentView.swift
+//  SettingView.swift
 //  AsyncView
 //
-//  Created by Ngo Dac Du on 9/11/22.
+//  Created by Ngo Dac Du on 9/12/22.
 //
 
 import SwiftUI
+import SAAsyncView
 
-struct HomeView: View {
+struct SettingView: View {
     var body: some View {
-        AsyncView(
-            operation: { try await Endpoint.shared.countries() },
+        AsyncModelView(
+            model: AsyncModel<[Country]>(asyncOperation: { try await Endpoint.shared.countries() }),
             empty: {
                 EmptyView()
             },
@@ -29,8 +30,8 @@ struct HomeView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SettingView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        SettingView()
     }
 }

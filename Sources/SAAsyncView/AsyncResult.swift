@@ -7,7 +7,7 @@
 
 import Foundation
 
-@frozen enum AsyncResult<AsyncData> {
+@frozen public enum AsyncResult<AsyncData> {
     case empty
     case loading
     case success(AsyncData)
