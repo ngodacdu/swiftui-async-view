@@ -8,9 +8,9 @@
 import SwiftUI
 
 @MainActor
-public class AsyncModel<AsyncData>: ObservableObject {
+open class AsyncModel<AsyncData>: ObservableObject {
     
-    @Published public private(set) var result = AsyncResult<AsyncData>.empty
+    @Published public var result = AsyncResult<AsyncData>.empty
     
     public typealias AsyncOperation = () async throws -> AsyncData
     
@@ -21,6 +21,9 @@ public class AsyncModel<AsyncData>: ObservableObject {
     public init(asyncOperation: AsyncOperation? = nil) {
         if let asyncOperation {
             asyncOperationBlock = asyncOperation
+        }
+        Task {
+            await load()
         }
     }
     
@@ -34,7 +37,7 @@ public class AsyncModel<AsyncData>: ObservableObject {
         }
         result = .loading
         do {
-            result = .success((try await asyncOperation()))
+            result = .success(try await asyncOperation())
         } catch {
             result = .failure(error)
         }

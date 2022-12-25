@@ -35,11 +35,5 @@ public struct AsyncModelView<AsyncData, Empty: View, Loading: View, Success: Vie
             success: success,
             failure: failure
         )
-        .task {
-            await model.load()
-        }
-        .refreshable {
-            await model.load()
-        }
     }
 }
